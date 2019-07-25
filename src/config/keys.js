@@ -1,8 +1,6 @@
-const keys = {
-  apiKeys: {
-    words: "90M19J3F",
-    dictionary: "66f08c26-968d-439c-adeb-bf857f56d307"
-  }
-};
+import dev from "./dev";
+import prod from "./prod";
+
+const keys = process.env.NODE_ENV === "production" ? prod : dev;
 
 export default keys;

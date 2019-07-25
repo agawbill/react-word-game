@@ -66,3 +66,22 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+const fetchData = async () => {
+const wordHeaders = {
+method: "GET",
+headers: {
+"X-RapidAPI-Host": "wordsapiv1.p.rapidapi.com",
+"X-RapidAPI-Key": "0c48777177msh257e767cc95b1d2p1a799bjsn7ab53e983925"
+}
+};
+
+const data = await fetch(
+"https://wordsapiv1.p.rapidapi.com/words/?random=true",
+wordHeaders
+);
+
+const response = await data.json();
+
+console.log(response);
+};

@@ -1,0 +1,10 @@
+.startButton {
+  background-color: green;
+  color: white;
+  font-size: 40px;
+  padding: 10px;
+}
+
+.startButton:hover {
+  background-color: lightgreen;
+}

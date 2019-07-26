@@ -39,13 +39,15 @@ const GameBody = props => {
       const wordData = await fetch(
         `https://random-word-api.herokuapp.com/word?key=${
           keys.apiKeys.words
-        }&number=1`,
+        }&number=50`,
         wordHeaders
       );
 
       const wordResponse = await wordData.json();
 
-      let randomWord = wordResponse[0];
+      let randomIndex = Math.floor(Math.random() * wordResponse.length);
+
+      let randomWord = wordResponse[randomIndex];
 
       const defHeaders = {
         method: "GET"

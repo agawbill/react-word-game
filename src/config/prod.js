@@ -1,7 +1,8 @@
 const prod = {
   apiKeys: {
     words: process.env.WORDS,
-    dictionary: process.env.DICTIONARY
+    dictionary: process.env.DICTIONARY,
+    prod: "prod"
   }
 };
 

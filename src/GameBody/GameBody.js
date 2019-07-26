@@ -36,7 +36,7 @@ const GameBody = props => {
         method: "GET"
       };
 
-      console.log(keys.apiKeys.words);
+      console.log(keys.prod);
 
       const wordData = await fetch(
         `https://random-word-api.herokuapp.com/word?key=${

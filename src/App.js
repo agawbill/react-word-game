@@ -22,6 +22,8 @@ function App() {
     if (status === "over" && currentScore > topScore) {
       setTopScore(currentScore);
       setCurrentScore(0);
+    } else if (status === "over") {
+      setCurrentScore(0);
     }
   };
 

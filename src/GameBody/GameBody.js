@@ -41,7 +41,7 @@ const GameBody = props => {
       };
 
       const wordData = await fetch(
-        `http://api.wordnik.com/v4/words.json/randomWords?hasDictionaryDef=true&minCorpusCount=0&minLength=5&maxLength=15&limit=1&api_key=${
+        `https://api.wordnik.com/v4/words.json/randomWords?hasDictionaryDef=true&minCorpusCount=0&minLength=5&maxLength=15&limit=1&api_key=${
           keys.apiKeys.words
         }`,
         wordHeaders

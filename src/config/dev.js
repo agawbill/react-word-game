@@ -1,6 +1,6 @@
 const dev = {
   apiKeys: {
-    words: "4ESB51Y9",
+    words: "PSRDFOTZ",
     dictionary: "66f08c26-968d-439c-adeb-bf857f56d307"
   }
 };

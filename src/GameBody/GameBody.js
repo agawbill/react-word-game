@@ -34,20 +34,26 @@ const GameBody = props => {
     const fetchData = async () => {
       const wordHeaders = {
         method: "GET"
+        // mode: "no-cors",
+        // headers: {
+        //
+        // }
       };
 
       const wordData = await fetch(
-        `https://random-word-api.herokuapp.com/word?key=${
+        `http://api.wordnik.com/v4/words.json/randomWords?hasDictionaryDef=true&minCorpusCount=0&minLength=5&maxLength=15&limit=1&api_key=${
           keys.apiKeys.words
-        }&number=50`,
+        }`,
         wordHeaders
       );
 
       const wordResponse = await wordData.json();
 
-      let randomIndex = Math.floor(Math.random() * wordResponse.length);
+      console.log(wordResponse);
 
-      let randomWord = wordResponse[randomIndex];
+      let randomWord = wordResponse[0].word;
+
+      console.log(randomWord);
 
       const defHeaders = {
         method: "GET"

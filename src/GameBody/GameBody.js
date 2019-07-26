@@ -93,7 +93,10 @@ const GameBody = props => {
       return;
     }
 
-    if (wrongGuess.indexOf(letter) !== -1) {
+    if (
+      wrongGuess.indexOf(letter) !== -1 ||
+      rightGuess.indexOf(letter) !== -1
+    ) {
       return;
     }
 

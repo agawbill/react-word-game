@@ -33,8 +33,8 @@ const GameBody = props => {
   useEffect(() => {
     const fetchData = async () => {
       const wordHeaders = {
-        method: "GET"
-        // mode: "no-cors",
+        method: "GET",
+        mode: "no-cors"
         // headers: {
         //
         // }

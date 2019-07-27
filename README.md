@@ -1,4 +1,4 @@
-I've been studying React for a bit now, and I realized I have nothing to show that demonstrates I have a working knowledge of core principles.That's why I created this.
+I've been studying React for a couple months now, and I realized I have nothing to show that demonstrates I have a working knowledge of core principles.That's why I created this.
 
 I basically took a word game that I made when I was learning javascript, and I approached the task using REACT. I utilized the Meriam Dictionary API to get definitions. The words are generated dynamically from a word-list API, but it's not reliable (I keep having to get new API key each day).  I'm going to use a new API to dynamically generate a word, but I'm just waiting on the key. 
 

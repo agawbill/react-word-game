@@ -1,6 +1,6 @@
 const dev = {
   apiKeys: {
-    words: "a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5",
+    words: "6mcaqy8hy94rsdw9v4yfktq4ibyzcsuqlc96dneljlxilz34e",
     dictionary: "66f08c26-968d-439c-adeb-bf857f56d307"
   }
 };

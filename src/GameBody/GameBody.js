@@ -33,27 +33,21 @@ const GameBody = props => {
   useEffect(() => {
     const fetchData = async () => {
       const wordHeaders = {
-        method: "GET",
-        mode: "no-cors"
-        // headers: {
-        //
-        // }
+        method: "GET"
       };
 
       const wordData = await fetch(
-        `https://api.wordnik.com/v4/words.json/randomWords?hasDictionaryDef=true&minCorpusCount=0&minLength=5&maxLength=15&limit=1&api_key=${
+        `https://api.wordnik.com/v4/words.json/randomWords?hasDictionaryDef=true&minCorpusCount=1000&minLength=3&maxLength=15&limit=1&api_key=${
           keys.apiKeys.words
         }`,
         wordHeaders
       );
 
+      console.log(wordData);
+
       const wordResponse = await wordData.json();
 
-      console.log(wordResponse);
-
       let randomWord = wordResponse[0].word;
-
-      console.log(randomWord);
 
       const defHeaders = {
         method: "GET"

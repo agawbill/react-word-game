@@ -43,8 +43,6 @@ const GameBody = props => {
         wordHeaders
       );
 
-      console.log(wordData);
-
       const wordResponse = await wordData.json();
 
       let randomWord = wordResponse[0].word;
